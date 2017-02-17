@@ -1,0 +1,11 @@
+.progress-striped .progress-bar {
+    display: none;
+}
+.progress-striped {
+    background: url('/img/spinner.gif') no-repeat center top !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: none !important;
+    height: 16px !important;
+    overflow: hidden;
+}

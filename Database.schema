@@ -1,0 +1,183 @@
+-- MySQL dump 10.13  Distrib 5.5.31, for Linux (x86_64)
+--
+-- Host: localhost    Database: sharing_airbnb
+-- ------------------------------------------------------
+-- Server version	5.5.31
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+
+DROP TABLE IF EXISTS `tokens`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tokens` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `token` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `age` tinyint(3) unsigned DEFAULT NULL,
+  `gender` varchar(25) DEFAULT NULL,
+  `marital_status` varchar(15) DEFAULT NULL,
+  `zip` varchar(10) DEFAULT NULL,
+  `region` varchar(25) DEFAULT NULL,
+  `grouping` tinyint(1) unsigned DEFAULT NULL,
+  `step` varchar(20) DEFAULT NULL,
+  `stamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `ip_address` varchar(16) DEFAULT NULL,
+  `status` varchar(20) DEFAULT NULL,
+  `study` varchar(20) DEFAULT NULL,
+  `avatar` varchar(255) DEFAULT NULL,
+  `token` varchar(100) DEFAULT NULL,
+  `facebook_data` blob DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+
+DROP TABLE IF EXISTS `user_questions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user_questions` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) unsigned DEFAULT NULL,
+  `phase` tinyint(1) unsigned DEFAULT NULL,
+  `question` varchar(255) DEFAULT NULL,
+  `answer` varchar(100) DEFAULT NULL,
+  `stamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+
+DROP TABLE IF EXISTS `airbnb_survey`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `airbnb_survey` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) unsigned DEFAULT NULL,
+  `phase` tinyint(1) unsigned DEFAULT NULL,
+  `host_or_guest` varchar(35) DEFAULT NULL,
+  `interact` varchar(35) DEFAULT NULL,
+  `first_interaction` varchar(35) DEFAULT NULL,
+  `hangout` varchar(35) DEFAULT NULL,
+  `stamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+
+DROP TABLE IF EXISTS `game_data`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `game_data` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) unsigned DEFAULT NULL,
+  `phase` tinyint(1) unsigned DEFAULT NULL,
+  `investment` int(5) unsigned DEFAULT NULL,
+  `robot_avatar` varchar(255) DEFAULT NULL,
+  `robot_age` varchar(10) DEFAULT NULL,
+  `robot_marital_status` varchar(15) DEFAULT NULL,
+  `robot_state` varchar(50) DEFAULT NULL,
+  `robot_region` varchar(25) DEFAULT NULL,
+  `robot_gender` varchar(10) DEFAULT NULL,
+  `robot_rating` tinyint(2) DEFAULT NULL,
+  `robot_interactions` tinyint(3) DEFAULT NULL,
+  `robot_reviews` tinyint(3) DEFAULT NULL,
+  `robot_member_since` int(4) DEFAULT NULL,
+  `robot_type` varchar(10) DEFAULT NULL,
+  `robot_order` tinyint(2) DEFAULT NULL,
+  `robot_distance` varchar(15) DEFAULT NULL,
+  `robot_return` int(6) unsigned DEFAULT NULL,
+  `robot_percentage` float DEFAULT NULL,
+  `robot_world` varchar(25) DEFAULT NULL,
+  `start_stamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `end_stamp` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+
+DROP TABLE IF EXISTS `locations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `locations` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `state` varchar(25) DEFAULT NULL,
+  `region` varchar(25) DEFAULT NULL,
+  `zip` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+CREATE INDEX zipstate_idx on locations(zip, state);
+
+
+--
+-- Table structure for table `user_final_data`
+--
+
+DROP TABLE IF EXISTS `user_final_data`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user_final_data` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) unsigned DEFAULT NULL,
+  `phase` tinyint(1) unsigned DEFAULT NULL,
+  `score` int(10) unsigned DEFAULT NULL,
+  `contacted` bool DEFAULT false,
+  `rewarded` bool DEFAULT false,
+  `stamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+CREATE INDEX useradmin_idx on user_final_data(user_id, phase);
+
+
+DROP TABLE IF EXISTS `reminder_log`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `reminder_log` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `email` varchar(50),
+  `user_id` int(11) unsigned,
+  `reminder` enum('first', 'second', 'third', 'fourth'),
+  `phase` tinyint(3) unsigned,
+  `study` varchar(25) DEFAULT NULL,
+  `stamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+/*!40101 SET character_set_client = @saved_cs_client */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2014-03-04 11:56:47

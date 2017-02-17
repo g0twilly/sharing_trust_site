@@ -1,0 +1,7 @@
+Current Email address in tise.php: $config['email'] = 'admin@stanfordexchange.org';
+Current Contact Email address in tise.php: $config['contact_email'] = 'contact@airbnb.stanford.edu';
+IP Address Verification needed?
+Any requirement for the Idleness check? (You haven't done anything in 5/10/15 minutes, then logout). Already implemented.
+Using $ or "Credits"
+Sendmail
+j

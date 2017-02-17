@@ -1,0 +1,1457 @@
+/* colors */
+.violet1        { color: #533755;}
+.violet2        { color: #634a65;}
+.violet3        { color: #745d75;}
+.violet4        { color: #847085;}
+.purple         { color: #3b1b3d;}
+.lavender       { color: #947496;}
+.darkpurple     { color: #251129;}
+.teal           { color: #4da69b;}
+.lightorange    { color: #f3b466;}
+.darkorange     { color: #f06764;}
+.yellow         { color: #f9f7db;}
+.grey           { color: #aeaeae;}
+.red            { color: #d9534f;}
+.green          { color: #5cb85c;}
+.orange         { color: #FF8B17;}
+.bg-white       { background-color: #FFF;}
+/* Black Buttons */
+.btn-black {
+    color: #ffffff;
+    background-color: #222;
+    border-color: #000;
+}
+.btn-black:hover,
+.btn-black:focus,
+.btn-black:active,
+.btn-black.active,
+.open .dropdown-toggle.btn-black,
+.btn.btn-black:hover {
+    color: #ffffff;
+    background-color: #555;
+    border-color: #000;
+}
+.btn-black:active,
+.btn-black.active,
+.open .dropdown-toggle.btn-black {
+    color: #ffffff;
+    background-image: none;
+}
+.btn-black.disabled,
+.btn-black[disabled],
+fieldset[disabled] .btn-black,
+.btn-black.disabled:hover,
+.btn-black[disabled]:hover,
+fieldset[disabled] .btn-black:hover,
+.btn-black.disabled:focus,
+.btn-black[disabled]:focus,
+fieldset[disabled] .btn-black:focus,
+.btn-black.disabled:active,
+.btn-black[disabled]:active,
+fieldset[disabled] .btn-black:active,
+.btn-black.disabled.active,
+.btn-black[disabled].active,
+fieldset[disabled] .btn-black.active {
+    color: #ffffff;
+    background-color: #444;
+    border-color: #000;
+}
+
+/* Teal Buttons */
+.btn-teal {
+  color: #ffffff !important;
+  background-color: #4DA69B;
+  border-color: #35756D;
+}
+
+.btn-teal:hover,
+.btn-teal:focus,
+.btn-teal:active,
+.btn-teal.active,
+.open .dropdown-toggle.btn-teal {
+  color: #ffffff !important;
+  background-color: #35756d;
+  border-color: #35756D;
+}
+
+.btn-teal:active,
+.btn-teal.active,
+.open .dropdown-toggle.btn-teal {
+  background-image: none;
+}
+
+.btn-teal.disabled,
+.btn-teal[disabled],
+fieldset[disabled] .btn-teal,
+.btn-teal.disabled:hover,
+.btn-teal[disabled]:hover,
+fieldset[disabled] .btn-teal:hover,
+.btn-teal.disabled:focus,
+.btn-teal[disabled]:focus,
+fieldset[disabled] .btn-teal:focus,
+.btn-teal.disabled:active,
+.btn-teal[disabled]:active,
+fieldset[disabled] .btn-teal:active,
+.btn-teal.disabled.active,
+.btn-teal[disabled].active,
+fieldset[disabled] .btn-teal.active {
+  color: #ffffff;
+  background-color: #4DA69B;
+  border-color: #35756D;
+}
+
+.btn-teal .badge {
+  color: #4DA69B;
+  background-color: #ffffff;
+}
+.strong {
+    font-weight: bold;
+}
+.gold {
+    color: #e7711b;
+}
+.ucword {
+    text-transform: capitalize;
+}
+
+/* Alternate Alert sections */
+.alert-white {
+    background-color: #fff;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    -khtml-border-radius: 25px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.alert-grey {
+    background-color: #aeaeae;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    -khtml-border-radius: 25px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.alert-darkgrey {
+    background-color: #555555;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    -khtml-border-radius: 25px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.progress .progress-bar-teal {
+    background-color: #4da69b;
+}
+hr.full_width {
+    width: 100%;
+    clear: both;
+}
+.wide_width {
+    display: block;
+    width: 100%;
+    clear: both;
+    overflow: auto;
+}
+/* Whole Page */
+html,
+body {
+    height:100%;
+    background-color: #f9f9f9 !important;
+}
+#fullpage {
+    min-height:100%;
+    position: relative;
+    padding-bottom: 70px;
+}
+#container {
+    padding-top: 80px;
+    text-align: center;
+}
+.copy a {
+    color: #4da69b;
+}
+.show_smaller {
+    display: none !important;
+}
+.show_bigger {
+    display: block !important;
+}
+.helper_link {
+    border-top: 1px solid #EEE;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+.error {
+    color: red;
+    padding: 1px;
+}
+.full_width {
+    width: 100%;
+}
+.half_width {
+    width: 45%;
+}
+.quarter_width {
+    width: 20%;
+}
+.spacer {
+    padding-top: 10px;
+}
+.bigspacer {
+    padding-top: 25px;
+}
+.smaller-input {
+    width: 50%;
+    margin: 0 auto;
+}
+.allcaps {
+    text-transform: uppercase;
+}
+.continue {
+    margin: 70px auto 20px;
+}
+.underline {
+   
+}
+.half {
+    position:relative;
+}
+.half:after {
+    content:'';
+    position:absolute;
+    z-index:1;
+    background: #f9f9f9;
+    width: 50%;
+    height: 100%;
+    left: 47%;
+}
+.active .half:after {
+    background: white !important;
+}
+.playerblock.hilite .half:after {
+    background: #efefef;
+}
+.nowrap {
+    white-space: nowrap;
+}
+.superscripted {
+    font-size: .5em;
+    vertical-align: text-top;
+}
+.timeout {
+    margin-top: 10px;
+}
+.smalltext {
+    font-size: 14px !important;
+    line-height: 20px !important;
+}
+.bigger {
+    font-size: 1.2em;
+    line-height: 1.5 !important;
+}
+/* Header */
+.navbar-nav {
+    width: 100%;
+}
+.navlogowrapper {
+    height: 70px;
+    float: right !important;
+}
+.navlogowrapper a {
+    padding: 0 !important;
+}
+.navlogo {
+    height: 70px;
+}
+
+/* Footer */
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    background: url('/img/footer.gif') repeat-x 0 0;
+}
+#footer .copyright {
+    color: #000000;
+    vertical-align: middle;
+    padding: 20px 50px;
+}
+
+/* Standard*/
+.logo {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #EEE;
+}
+.copy {
+    line-height: 1.7em;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+/* About */
+#about {
+    margin-top: 10px;
+}
+#about h3,
+#overview h3 {
+    color: #333333;
+    font-weight: bold;
+}
+
+.jumbotron.game_instructions {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#overview .panel p {
+    font-size: 21px;
+    font-weight: 200;
+}
+
+#about .getstarted {
+    margin-top: 0x;
+}
+
+/* Sign Up */
+#signup h2 {
+    margin-top: 3px;
+    padding-top: 0;
+    margin-bottom: 25px;
+}
+#signup h2 .required_label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+#signup h5 {
+    padding-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#signup h5.error {
+    margin: -25px 0 25px 0;
+}
+
+#signup .signup_item {
+    padding-top: 5px;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+label {
+    font-size: 14px;
+    font-weight: normal;
+}
+#signup label {
+    width: 130px;
+    text-align:right;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.signup_info {
+    margin-top: 5px;
+}
+#signup input {
+    text-align: left;
+}
+#month {
+    width: 100px;
+}
+#day {
+    width: 65px;
+}
+#year {
+    width: 85px;
+}
+.select_input {
+    width: 255px;
+    height: 35px;
+    padding-left: 10px;
+    border: 1px solid #CCC;
+}
+.text_input {
+    width: 255px;
+    height: 28px;
+    border: 1px solid #CCC;
+    padding: 5px 10px;
+}
+#signup .submit {
+    padding-top: 30px;
+}
+#signup .avatar_item {
+    width: 255px;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+}
+#signup .avatar_thumb {
+    height: 125px;
+    border: 1px solid grey;
+    vertical-align: middle;
+}
+#avatar_modal .modal-dialog {
+    width: 80%;
+}
+.avatar_options {
+    height: 100%;
+    overflow: auto;
+}
+.avatar_option {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    float: left;
+}
+
+.profile_complete .user_avatar,
+.profile_complete .user_info {
+    display: block;
+    text-align: center;
+}
+
+
+
+.avatar_option .avatar_option_img {
+    width: 100%;
+    border: 1px solid black;
+}
+.avatar_option:hover {
+    background-color: #EFF;
+}
+#signup .site_box {
+    margin: 6px 6px 6px 0;
+}
+
+#signup .site_item {
+    min-width: 255px;
+    overflow: hidden;
+    height: 28px;
+    padding: 5px 10px 5px 0;
+    display: inline-block;
+    vertical-align: top;
+}
+#signup .site_item.other {
+    height: 90px;
+}
+#signup .site_item #new_site {
+    width: 100%;
+}
+#state {
+    /* display: none; */
+}
+
+#signup .site_list {
+    display: inline-block;
+    text-align: left;
+    margin-left: 250px;
+}
+#signup .site_list.greyed {
+    background-color: #EEE;
+}
+#signup .site_item.no_sites {
+    background-color: #f9f9f9 !important;
+}
+#signup label.text-top {
+    vertical-align: top;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+#signup .new_entry {
+    display: none;
+    margin-top: 5px;
+}
+#signup .new_entry.visible,
+#state.visible {
+    display: block;
+}
+
+/* Login */
+.login_error {
+    width: 250px;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.interested .panel {
+    padding: 20px;
+}
+.interested .panel .text_input {
+    max-width: 100%;
+}
+
+/* Account Info */
+#account_info {
+    width: 80%;
+    margin: 80px auto 10px auto;
+}
+/* Progress Pages */
+#progress .progress-panel {
+    margin-top: 15px;
+}
+#progress .active_step td {
+    -webkit-transition:background-color .5s ease-in-out;
+    -moz-transition:background-color .5s ease-in-out;
+    -o-transition:background-color .5s ease-in-out;
+    transition:background-color .5s ease-in-out;
+}
+
+/* Trust Survey */
+#survey {
+    text-align: center;
+}
+h3.survey_title {
+    padding: 10px 20px 35px 20px;
+    border-bottom: 1px solid #EEE;
+}
+#survey .survey_item {
+    padding:  10px 20px;
+}
+.survey_button {
+    width: auto;
+    margin-bottom: 10px !important;
+    min-width: 250px;
+}
+.show_if_yes {
+    margin-top: 20px;
+    display: hidden;
+}
+#survey label {
+    line-height: 1.7em;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+#survey .select_input {
+    margin-top: 20px;
+    display: block;
+}
+#survey .question_text {
+    font-size: 20px;
+    line-height: 30px;
+}
+.answer_button_group {
+    min-width: 250px;
+}
+
+/* Site Survey */
+.satisfaction_label {
+    padding: 0 5px;
+}
+#survey .survey_site {
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 10px;
+    clear: both;
+    overflow: auto;
+}
+#survey .survey_site .survey_item {
+    padding: 10px;
+}
+#survey .survey_site h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+#survey .survey_site .activity_item  {
+    width: 33%;
+    text-align: right;
+    display: inline-block;
+    float: right;
+}
+#survey .survey_site .activity_item .activity_checkbox {
+    margin-left: 7px;
+}
+#survey .submit {
+    margin-top: 10px;
+}
+.frequency_button {
+    width: 120px;
+}
+#survey label.site_question {
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Game */
+.info_banner {
+    margin-top: 30px;
+}
+.info_banner .conversion_text {
+    vertical-align: middle;
+    font-size: 16px;
+}
+.watch_label p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.info_banner .glyphicon {
+    vertical-align: middle;
+    font-size: 26px;
+}
+.overview_grid {
+    text-align: left;
+}
+.overview_grid h2 {
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0;
+    line-height: 26px;
+    font-size: 26px;
+    color: #533755;
+}
+.overview_block {
+    padding: 15px 15px 25px 15px;
+    font-size: 1em;
+    color: #fff;
+    text-align: left;
+    line-height: 1.7em;
+}
+.overview_block.block1 {
+    background-color: #533755;
+}
+.overview_block.block2 {
+    background-color: #634a65;
+}
+.overview_block.block3 {
+    background-color: #745d75;
+}
+.overview_block.block4 {
+    background-color: #847085;
+}
+.nospace {
+    padding: 0 !important;
+}
+.overview_img {
+    margin: 0 auto;
+    vertical-align: bottom;
+}
+.overview_img_wrap {
+    text-align: center;
+    height: 140px;
+    margin: 20px 0 25px 0;
+}
+.action_buttons {
+    padding: 30px 0;
+    margin-top: 30px;
+}
+.game_input {
+    width: 125px;
+}
+#game {
+    margin-top: 10px;
+}
+#game_box .game_form,
+#activity_breakdown {
+    display: none;
+}
+
+/* Risk Assessment */
+.risk_form .btn {
+    white-space: normal;
+    padding: 25px 10px;
+    min-height: 100px;
+    margin-bottom: 15px;
+}
+.risk_form .btn span {
+    line-height: 18px;
+    vertical-align: middle;
+}
+.risk_buttons {
+    margin-top: 25px;
+}
+.ringed {
+    border: 3px solid #EEEEEE;
+    border-radius: 25px;
+}
+
+/* Game Play CSS */
+h1.game_title {
+    font-size: 40px;
+    color: #BDBDBD;
+}
+.game_subtitle,
+.game_info_subtitle {
+    font-size: 26px;
+    margin-top: 5px;
+}
+.game_block {
+    min-height: 50px !important;
+}
+.game_investor,
+.game_recipient {
+    /*min-height: 175px !important;*/
+}
+#game .hilite {
+    background-color: #efefef;
+    border-radius: 10px;
+}
+#game .active {
+    background-color: #ffffff !important;
+    border-radius: 10px;
+}
+#game .game_investor .info_block { 
+    display: none;
+}
+#game .active .game_investor .info_block {
+    display: block;
+}
+#game .playerblock {
+    margin: 5px 0;
+    padding: 10px 15px;
+}
+#game .active .game_investor.investor_hand{
+    background: url('/img/grey-investor.png') no-repeat top left;
+    background-size: contain;
+}
+#game .active .game_recipient.recipient_hand {
+    background: url('/img/grey-recipient.png') no-repeat bottom right;
+    background-size: contain;
+}
+#game .active .game_recipient.investor_hand {
+    background: url('/img/grey-investor-flip.png') no-repeat top right;
+    background-size: contain;
+}
+#game .active .game_investor.recipient_hand {
+    background: url('/img/grey-recipient-flip.png') no-repeat bottom left;
+    background-size: contain;
+}
+.user_avatar {
+    width: 125px;
+    height: 125px;
+    display: inline-block;
+    padding: 10px;
+}
+.user_avatar img {
+    width: 100%;
+    border: 1px solid #DBDBDB;
+}
+.user_info {
+    padding: 10px;
+    display: inline-block;
+    /*min-height: 150px;*/
+}
+.game_previous .user_info {
+    min-height: 0;
+}
+.user_info h3 {
+    color: #333333;
+    font-size: 18px;
+    margin: 0;
+}
+.user_info .role {
+    color: #947496;
+    font-weight: 500;
+}
+.role strong {
+    color: #000;
+}
+.game_recipient .user_info,
+.game_recipient .user_avatar,
+.form_block .current_lendings {
+    text-align: left;
+    float: left;
+    vertical-align: top;
+}
+.game_investor .user_info,
+.game_investor .user_avatar,
+.form_block .current_holdings {
+    text-align: right;
+    float: right;
+    vertical-align: top;
+}
+.playerblock .current_holdings {
+    visibility: hidden;
+}
+.playerblock.active .current_holdings {
+    visibility: visible;
+}
+#submit_btn:disabled {
+    color: #555 !important; 
+    background-color: #CCC !important;
+    border-color: #AAA !important;
+}
+
+.current_holdings,
+.current_lendings {
+    padding: 10px;
+}
+
+.right-side-pad {
+    margin-right: 40px;
+}
+.left-side-pad {
+    margin-left: 40px;
+}
+.form_block {
+    clear: both;
+}
+.form_block h5 {
+    margin: 5px 0 2px 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+.current_holdings h3.holdings {
+    font-size: 24px;
+    line-height: 34px;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.game_input_group {
+    width: 320px;
+}
+.game_input_group .game_input {
+    border-bottom-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+}
+.game_input_group .game_credit_label {
+    background-color: transparent !important;
+    border: none;
+    font-weight: bold !important;
+}
+h5.game_label {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.user_info {
+  width: 275px;
+}
+.change {
+    color: #947496;
+    font-size: 30px;
+    margin-top: 0px;
+}
+.game_previous {
+    border-top: 1px solid #EEE;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.prev_block {
+    padding-top: 40px;
+}
+.game_previous .game_item {
+    padding: 10px 0;
+}
+
+.game_previous .game_item .game_info,
+.game_previous .game_item .user_info,
+.game_previous .game_item .user_avatar {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.game_previous .game_item .game_info {
+    text-align: right;
+    width: 250px;
+    padding: 10px;
+}
+.game_previous .game_item .game_info .hilite {
+    font-weight: bold;
+}
+.game_previous .game_item .user_info {
+    text-align: left;
+    width: 330px;
+}
+
+/* Game Summary info */
+.summary_info .row {
+    min-height: 75px;
+}
+.summary_info .row .user_avatar {
+    width: 70px;
+    height: 70px;
+}
+.summary_info .text-right .user_avatar {
+    float: right;
+}
+.summary_info .text-left .user_avatar {
+    float: left;
+}
+.summary_info .text {
+    line-height: 75px;
+    vertical-align: middle;
+}
+.summary_info .breakdown .text {
+    line-height: 24px;
+}
+.summary_info .breakdown .giant {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 44px;
+    color: #947496;
+}
+.summary_info .breakdown .user_avatar {
+    width: 100px;
+    height: 100px;
+}
+.summary_info .breakdown {
+    padding: 10px 0;
+    border-top: 1px solid #EFEFEF;
+    min-height: 100px;
+}
+.summary_info .big {
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: sub;
+}
+.summary_title {
+    width: 100%;
+    text-align: center;
+    color: #BDBDBD;
+    border-bottom: 1px solid #EFEFEF;
+}
+.summary_title {
+    text-transform: uppercase;
+    letter-spacing: .5em;
+}
+.loadbox {
+    min-height: 200px;
+    margin: 10px auto;
+    max-width: 600px;
+}
+#player_loading,
+#control_loading,
+#summary_loading,
+#lottery_loading {
+    color: #BCBCBC;
+}
+.loadbox h3 {
+    padding-top: 20px;
+}
+.loadbox h5 {
+    padding-bottom: 20px;
+}
+.loadbox .progress {
+    width: 250px;
+    margin: 0 auto;
+    height: 12px;
+}
+#player_loading .progress .progress_bar,
+#control_loading .progress .progress_bar {
+    border: 1px solid #b7b7b7;
+}
+.top_space {
+    padding-top: 30px;
+}
+#lottery_value {
+    display: none;
+}
+
+/* Game Complete Page */
+.friend_email {
+    margin-top: 30px;
+    padding-top: 20px;
+}
+.friend_email h3 {
+    font-size: 18px;
+    line-height:24px;
+}
+
+.gift_card_holder {
+    width: 250px;
+    float: right;
+}
+.gift_card_copy {
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    margin: 30px auto;
+    vertical-align;
+    line-height: 30px;
+    font-size: 15px;
+}
+.gift_card_holder img {
+    width: 100%;
+    vertical-align: middle;
+    max-width: 250px;
+}
+#complete {
+    overflow: auto;
+}
+#complete h4 {
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.gift_card_copy .big {
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 46px;
+    display: inline-block;
+    width: 100%;
+}
+#complete .next_steps {
+    padding: 30px 0;
+}
+#complete #friend_email_form {
+    width: 75%;
+    margin: 20px auto;
+}
+#complete #friend_email_form .form_label {
+    font-weight: bold;
+}
+.jumbotron .more_information p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    margin-bottom: 0;
+}
+.more_information {
+    text-align: left;
+    margin-top: 30px;
+    padding: 0 0 55px 0;
+}
+.more_information .more_information_info {
+    background-color: #FFFFFF;
+    border: 1px solid #AEAEAE;
+    height: 200px;
+    overflow-y: scroll;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+
+/* Toggles off the number spinner */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+@media all and (min-width: 1201px) {
+    .navbar-nav li a.navlinks  {
+        padding-top: 25px !important;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .right-side-pad {
+        margin-right: inherit;
+    }
+    .left-side-pad {
+        margin-left: inherit;
+    }
+    #container {
+        padding-top: 60px;
+    }
+    .navlogowrapper {
+        height: 50px;
+    }
+    .navlogo {
+        height: 50px;
+    }
+
+    .risk_item .panel-body {
+        padding: 5px;
+    }
+    .pie_image_sm {
+        float:none;
+        text-align:center;
+        margin: 0 auto;
+    }
+    .risk_options_sm {
+        width: 100%;
+        padding: 0 !important;
+    }
+    .user_info {
+        max-width: 300px;
+    }
+}
+
+/* col-sm breakpoint */
+@media all and (max-width: 991px) {
+    .pie_image_sm {
+        float: left;
+        width: 55px;
+        margin: 0;
+    }
+    .risk_options_sm {
+        width: auto;
+        margin-left: 15px;
+    }
+    #signup .site_list {
+        margin-left: 175px;
+    }
+}
+
+/* col-xs breakpoint */
+@media all and (max-width: 767px) {
+    .navlogowrapper {
+        float: left !important;
+    }
+    #videoPlayer {
+	max-width: 95%;
+    }
+    .risk_item .panel-body {
+        padding: 15px;
+        margin: 0 auto;
+    }
+    .risk_previous .risk_item {
+        padding-left: 10px;
+    }
+    .risk_options_sm {
+        margin-left: 20px;
+    }
+    h1.game_title {
+        font-size: 30px;
+    }
+    .game_subtitle,
+    .game_info_subtitle {
+        font-size: 18px;
+    }
+    .game_investor,
+    .game_recipient {
+        float: none;
+        min-height: 150px !important;
+    }
+    .right-side-pad {
+        margin-right: inherit;
+    }
+    .left-side-pad {
+        margin-left: inherit;
+    }
+    .game_investor .info_block {
+        margin-right: 15%;
+    }
+    .game_recipient .info_block {
+        margin-left: 15%;
+    }
+    .user_avatar {
+        width: 105px;
+        height: 105px;
+    }
+    .form_block .current_holdings,
+    .form_block .current_lendings {
+        float: none;
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .game_input_group {
+        margin: 0 auto;
+    }
+    .user_info {
+        max-width: 300px;
+    }
+    .game_previous .game_item {
+        background-color: #fff;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        -khtml-border-radius: 20px;
+        margin: 0 5% 10px 5%;
+    }
+    .game_previous .game_item .game_info {
+        width: 100%;
+        max-width: none !important;
+        text-align: center !important;
+    }
+    .game_previous .game_item .user_info {
+        max-width: none;
+    }
+    #survey .survey_site .activity_item  {
+        width: 50%;
+        text-align: left;
+        display: inline-block;
+        float: left;
+    }
+    #survey .survey_site .activity_item .activity_checkbox {
+        float: left;
+        margin-right: 7px;
+    }
+    #signup .site_list {
+        margin-left: 25px;
+    }
+    .gift_card_holder {
+        width: 40%;
+    }
+    .gift_card_copy {
+        width: 55%;
+    }
+    .summary_info .text-right .user_avatar {
+        float: left;
+    }
+    .summary_info .text-right {
+        text-align: left;
+    }
+}
+
+/* SMALLER */
+@media all and (max-width: 550px) {
+    .show_smaller {
+        display: block !important;
+    }
+    .show_bigger {
+        display: none !important;
+    }
+
+    #signup form {
+        width: 270px;
+        margin: 0 auto;
+    }
+    #signup label {
+        text-align:left;
+        display: block;
+        width: 100%;
+    }
+    #signup .text_input,
+    #signup .select_input {
+        text-align: left;
+        display: block;
+    }
+    #signup #month, #signup #day, #signup #year {
+        display: inline-block;
+    }
+    #month {
+        margin-left: -10px;
+    }
+    #signup .site_item.other {
+        height: 120px;
+    }
+    #account_info {
+        width: 94%;
+        margin-top: 40px;
+    }
+    #signup .avatar_item {
+        text-align: center;
+    }
+    #avatar_modal .modal-dialog {
+        width: 90%;
+    }
+    .avatar_option {
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        float: left;
+    }
+    .satisfaction_label {
+        padding: 0;
+    }
+    #survey .survey_item {
+        padding: 20px 5px;
+    }
+    .frequency_button_group {
+        width: 75%;
+    }
+
+    .nospace {
+        padding: inherit;
+        width: 100%;
+    }
+    .pie_image_lg {
+        float:none;
+        width: 100px;
+        text-align:center;
+        margin: 0 auto;
+    }
+    .investor_hand,
+    .recipient_hand {
+        background: none !important;
+    }
+    .game_investor {
+        display: none;
+    }
+    .game_investor .info_block {
+        margin-right: 10px;
+    }
+    .game_recipient .info_block {
+        margin-left: 10px;
+    }
+    .game_recipient .form_block,
+    .game_investor .form_block {
+        width: 85%;
+    }
+    .current_holdings {
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        -khtml-border-radius: 5px;
+        background-color: #dddddd;
+    }
+    #summary .current_total {
+        font-size: 20px;    
+    }
+    .user_info {
+        width: 220px;
+    }
+    #survey .survey_site .activity_item {
+        width: 90%;
+        text-align: left;
+        float: none;
+    }
+    .gift_card_holder {
+        width: 90%;
+    }
+    .gift_card_copy {
+        width: 90%;
+    }
+    #complete #friend_email_form {
+        width: 90%;
+    }
+}
+
+/* Smallest */
+@media all and (max-width: 405px) {
+    .right-side-pad {
+        margin-right: 0;
+    }
+    .left-side-pad {
+        margin-left: 0;
+    }
+    .container {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .pie_image_sm {
+        float:none;
+        width: 55px;
+        text-align:center;
+        margin: 0 auto;
+    }
+    .risk_options_sm {
+        width: 100%;
+        padding: 0 !important;
+        margin: 0 auto;
+    }
+    .game_recipient .form_block,
+    .game_investor .form_block {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    .game_recipient .info_block,
+    .game_investor .info_block {
+        width: 100%;
+    }
+    .game_recipient .user_avatar,
+    .game_recipient .form_block,
+    .game_investor .user_avatar,
+    .game_investor .form_block  {
+        text-align: center;
+    }
+    .game_recipient .user_info,
+    .game_investor .user_info {
+        text-align: left;
+
+    }
+    .game_investor .user_avatar,
+    .game_recipient .user_avatar,
+    .game_previous .user_avatar
+     {
+        width: 100px;
+        height: 100px;
+    }
+    .user_info .info_line {
+        max-width: none;
+        width: 100%;
+    }
+    .game_block {
+        padding: 10px 0;
+    }
+    .game_input_group {
+        width: 100%;
+    }
+    h5.game_label {
+        font-size: 15px;
+    }
+    .current_holdings, 
+    .current_lendings {
+        padding: 10px 2px;
+    }
+    .game_recipient {
+    }
+    #survey .survey_site .survey_item.satisfaction {
+        padding: 7px 0;
+    }
+    .progress {
+        max-width: 90% !important;
+    }
+}
+
+#idle1 {
+    z-index: 101;
+}
+#idle2 {
+    z-index: 102;
+}
+#idle1 {
+    z-index: 103;
+}
+.idlebox {
+    width: 350px;
+    margin: 200px auto 0 auto;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -khtml-border-radius: 10px;
+    padding: 10px;
+    background-color: #222;
+    text-align: center;
+    color: #CCC;
+    font-size: 16px;
+    border: 3px solid black;
+}
+.idlebox h3 {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: normal;
+    line-height: 30px;
+}
+.idlebox button {
+    margin: 10px;
+}
+.idlebox .overlay_spinner {
+    margin-top: -35px;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+#overlay .overlay_box {
+    width: 250px;
+    margin: 200px auto 0 auto;
+    height: 80px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -khtml-border-radius: 10px;
+    padding: 10px;
+    background-color: #222;
+    text-align: center;
+    color: #CCC;
+    font-size: 16px;
+    border: 3px solid black;
+}
+
+#overlay .overlay_spinner {
+    margin: 0px auto;
+}
